@@ -1,91 +1,60 @@
-@font-face {
-    font-family: 'metropolis_1920regular';
-    src: url('font/metropolis_1920-webfont.eot');
-    src: url('font/metropolis_1920-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/metropolis_1920-webfont.woff2') format('woff2'),
-         url('font/metropolis_1920-webfont.woff') format('woff'),
-         url('font/metropolis_1920-webfont.ttf') format('truetype'),
-         url('font/metropolis_1920-webfont.svg#metropolis_1920regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+header h1 {
+  padding-top: 5px;
+  margin-bottom: 0px;
 }
 
-body {
-  /*Recommended font size/height by Google for 
-    responsize design*/
-  font-size: 16px;
-  line-height:1.2;
-  color:white;
-
-  /* Location of the image */
-  background-image: url(name_backdrop.jpg);
-  
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #320f52;
+header h1 a {
+  text-decoration: none;
+  color: #2c2c2c;
 }
 
-html, body {
-  position:relative;
-  height:100%;
-
-  /*fallback*/
-  height:100vh;
-  text-align:center;
-  overflow:hidden;
+header h2 {
+  font-weight: normal;
+  font-size: 1em;
 }
 
-#main-wrapper {
-  position:absolute;
-  top:35%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:100%;
+nav ul {
+  padding: 0 25px;
 }
 
-#main-wrapper > * {
-  margin:0 auto;
-  font-size: 150%;
-  font-family: 'Josefin Slab', serif;
-  font-weight:bold;
+nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 2px;
 }
 
-#name {
-  font-family: metropolis_1920regular;
-  font-size:800%;
-  font-weight:normal;
+nav ul li a {
+  text-decoration: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  color:#2c2c2c;
 }
 
-#line {
-    display: inline-block;
-    width: 75px;
-    height: 3px;
-    -moz-border-radius: 1px / 1px;
-    -webkit-border-radius: 1px 1px;
-    border-radius: 1px / 1px;
-    background: #fff;
-    margin: 30px auto;
+nav ul li a:visited {
+  color:#2c2c2c;
 }
 
-//Use if want to change for mobile screen
-/*@media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections 
-    background-image: url(images/background-photo-mobile-devices.jpg);
-  }
-}*/
+nav ul li a:hover {
+  color:#369fe4;
+}
+
+#about-me-container {
+  max-width:800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#about-me-text {
+  margin-left:150px;
+}
+
+#about-me-text .font-small {
+  line-height: 20px;
+  column-count: 2;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+}
