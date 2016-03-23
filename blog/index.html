@@ -1,25 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Kyle Elmore - Aspiring Freelancer</title>
-    <link href="main.css" type="text/css" rel="stylesheet">
-    <link href="index.css" type="text/css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:100' 
-    	rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog - Kyle Elmore</title>
+
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="/icon/icon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/icon/icon-large.png" sizes="32x32">
+
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="/icon/icon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="/icon/icon.ico"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+</script>
+
+    <script src="/animate.js'"></script>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-  	<div id="main-wrapper">
-      <br />
-  		<p id="name">Kyle Elmore</p>
-  		<span id="line"></span>
-  		<p>Aspiring Freelance Developer</p>
-  	</div>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p id="nav-title"><a href="/">Kyle Elmore</a></p>
+      <p id="nav-title-secondary">Android and iOS Developer</p>
+    </div>
 
-    <div id="main-nav-wrapper">
-        <button>Home</button>
-        <button>Projects</button>
-        <button>Tutorials</button>
-        <button>About</button>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="">
+          <a href="/">Home</a>
+        </li>
+        <li class="active">
+          <a href="/blog">Blog</a>
+        </li>
+        <li class="">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Coming Soon">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Coming Soon">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container-fluid articles-container">
+
+      
+
+      <ul>
+
+	
+
+	
+		<li>
+			<h2><a href="my-first-post.html">
+				The First Blog Post
+			</a></h2>
+			<p id="date">21 March 2016</p>
+			<p>
+				Hey guys, welcome to my blog&#39;s very first (and albeit, probably anti-climatic) blog post! Woo!
+				<a href="my-first-post.html">Click here to read more...</a>
+			</p>
+		</li>
+	
+
+</ul>
       </div>
+      
+      <hr />
+
+      <footer id="footer" class="text-center">
+        <p>Kyle Elmore, Freelance Mobile Developer</p>
+</footer>
+
+    </div>
   </body>
 </html>
